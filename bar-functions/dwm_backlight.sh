@@ -4,10 +4,13 @@
 # Joe Standring <git@joestandring.com>
 # GNU GPLv3
 
-# Dependencies: xbacklight
+#Dependencies: brightnessctl
 
 dwm_backlight () {
-    printf "%s %.0f%s\n" "$SEP1" "$(xbacklight)" "$SEP2"
+    actual=$(brightnessctl g)
+    max=$(brightnessctl m)
+    bright=$((actual * 100 / max))
+    printf " %i%%\n" "$bright"
 }
 
 dwm_backlight

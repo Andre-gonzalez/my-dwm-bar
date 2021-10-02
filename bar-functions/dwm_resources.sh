@@ -27,7 +27,7 @@ dwm_resources () {
 	else
 		printf "STA | MEM %s/%s CPU %s STO %s/%s: %s" "$MEMUSED" "$MEMTOT" "$CPU" "$STOUSED" "$STOTOT" "$STOPER"
 	fi
-	printf "%s\n" "$SEP2"
+	printf "%s\n"
 }
 
 dwm_resources
