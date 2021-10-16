@@ -66,7 +66,7 @@ do
     #upperbar="$upperbar$(dwm_cmus)"
     #upperbar="$upperbar$(dwm_mpc)"
     upperbar="$upperbar$(dwm_spotify)"
-    #upperbar="$upperbar$(dwm_connman)"
+    upperbar="$upperbar$(dwm_connman)"
     upperbar="$upperbar$(dwm_resources)"
     upperbar="$upperbar$(dwm_battery)"
     #upperbar="$upperbar$(dwm_mail)"

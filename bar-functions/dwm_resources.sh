@@ -21,7 +21,7 @@ dwm_resources () {
 	STOTOT=$(echo $df_output | awk '{print $2}')
 	STOPER=$(echo $df_output | awk '{print $5}')
 
-	printf "%s" "$SEP1"
+	printf "%s"
 	if [ "$IDENTIFIER" = "unicode" ]; then
 		printf " RAM %s/%s CPU %s STO %s/%s" "$MEMUSED" "$MEMTOT" "$CPU" "$STOUSED" "$STOTOT" 
 	else

@@ -7,7 +7,7 @@
 # Dependencies: connman
 
 dwm_connman () {
-    printf "%s" "$SEP1"
+    printf "%s"
     if [ "$IDENTIFIER" = "unicode" ]; then
         printf " "
     else
@@ -31,9 +31,9 @@ dwm_connman () {
 
     # if STRENGTH is empty, we have a wired connection
     if [ "$STRENGTH" ]; then
-        printf "%s %s %s%%" "$IP" "$CONNAME" "$STRENGTH"
+        printf "%s %s %s%%" "$CONNAME" "$STRENGTH"
     else
-        printf "%s %s" "$IP" "$CONNAME"
+        printf "%s %s" "$CONNAME"
     fi
 
     printf "%s\n" "$SEP2"
