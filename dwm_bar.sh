@@ -72,7 +72,7 @@ do
     #upperbar="$upperbar$(dwm_mail)"
     upperbar="$upperbar$(dwm_backlight)"
     upperbar="$upperbar$(dwm_alsa)"
-    #upperbar="$upperbar$(dwm_pulse)"
+    upperbar="$upperbar$(dwm_pulse)"
     #upperbar="$upperbar${__DWM_BAR_WEATHER__}"
     #upperbar="$upperbar$(dwm_vpn)"
     #upperbar="$upperbar${__DWM_BAR_NETWORKMANAGER__}"
@@ -90,5 +90,5 @@ do
     
     # Uncomment the line below to enable the lowerbar 
 #    xsetroot -name "$upperbar;$lowerbar"
-    sleep 1
+    sleep 2
 done
