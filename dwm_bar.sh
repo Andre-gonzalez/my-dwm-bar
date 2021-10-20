@@ -72,7 +72,7 @@ do
     upperbar="$upperbar$(dwm_battery)"
     #upperbar="$upperbar$(dwm_mail)"
     upperbar="$upperbar$(dwm_backlight)"
-    upperbar="$upperbar$(dwm_alsa)"
+    #upperbar="$upperbar$(dwm_alsa)"
     upperbar="$upperbar$(dwm_pulse)"
 	upperbar="$upperbar$(dwm_bluetooth)"
     #upperbar="$upperbar${__DWM_BAR_WEATHER__}"
