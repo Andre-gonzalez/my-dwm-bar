@@ -34,6 +34,7 @@ export SEP2="|"
 . "$DIR/bar-functions/dwm_backlight.sh"
 . "$DIR/bar-functions/dwm_alsa.sh"
 . "$DIR/bar-functions/dwm_pulse.sh"
+. "$DIR/bar-functions/dwm_bluetooth.sh"
 . "$DIR/bar-functions/dwm_weather.sh"
 . "$DIR/bar-functions/dwm_vpn.sh"
 . "$DIR/bar-functions/dwm_networkmanager.sh"
@@ -73,6 +74,7 @@ do
     upperbar="$upperbar$(dwm_backlight)"
     upperbar="$upperbar$(dwm_alsa)"
     upperbar="$upperbar$(dwm_pulse)"
+	upperbar="$upperbar$(dwm_bluetooth)"
     #upperbar="$upperbar${__DWM_BAR_WEATHER__}"
     #upperbar="$upperbar$(dwm_vpn)"
     #upperbar="$upperbar${__DWM_BAR_NETWORKMANAGER__}"
@@ -81,7 +83,7 @@ do
     upperbar="$upperbar$(dwm_date)"
     #upperbar="$upperbar$(dwm_loadavg)"
     #upperbar="$upperbar$(dwm_currency)"
-   
+ 
     # Append results of each func one by one to the lowerbar string
     lowerbar=""
 
